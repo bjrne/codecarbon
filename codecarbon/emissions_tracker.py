@@ -571,7 +571,7 @@ class BaseEmissionsTracker(ABC):
                 + f"W during {last_duration:,.2f} s [measurement time: {h_time:,.4f}]"
             )
         logger.info(
-            f"{self._total_energy.kWh:.6f} kWh of electricity used since the begining."
+            f"{self._total_energy.kWh:.6f} kWh of electricity used since the beginning."
         )
         self._last_measured_time = time.time()
         self._measure_occurrence += 1
